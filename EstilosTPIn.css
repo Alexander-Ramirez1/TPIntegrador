@@ -1,0 +1,127 @@
+*{ /*selector universal*/
+	margin: 0; /*todos los elementos tienen margen 0*/
+	padding: 0; /*espacio de relleno 0*/
+	font-family: Arial, Helvetica, sans-serif; /*tipo de fuente para todo el sitio*/
+}
+body{
+	background:#ffffff; /*color de fondo blanco*/
+}
+header, section, footer{
+	width: 90%; /*ancho en % para que se adapte a la pantalla*/
+	max-width: 1300px; /*para indicar el tamaño maximo será 1300px*/
+	margin: 1px auto; /*se aplica margen superior e inferior, separa header, section y footer*/
+}
+/*Formato área de navegación*/
+header nav{
+	background: #808080; /*color para el menú*/
+	overflow: hidden; /*oculta el contenido excedente*/
+}
+header nav ul{
+	list-style: none; /*para eliminar las viñetas de los elementos de la lista*/
+}
+header nav ul li{
+	float: left; /*crea el menu horizontal*/
+	margin: 1.5em; /*margenes para los elementos de la lista*/
+}
+header nav ul li a{
+	padding: 10px 10px; /*padding y display trabajan juntos*/
+	display: inline-block;
+	color: #dfdede; /*color de fuente*/
+	font-size: 16px;
+	font-weight: bold;
+	 /*elimina el subrayado del enlace*/
+	text-decoration:none;
+	display:flex;
+	flex-direction: column;
+}
+header nav ul li a:hover{
+	color: #ffffff; /*al pasar el mouse sobre el enlace cambia el color de la fuente*/
+}
+
+/*SECCIÓN UNO*/
+#seccion1{
+    background-image:url("imagenes/ba1.jpg");
+	width: 1200px;
+	height: 720px;
+	background-position:"center";
+	box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    color:#ffffff;
+    text-align: left;
+}
+
+#seccion1, h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    color:#ffffff;
+}
+
+/*SECCIÓN DOS*/
+#seccion2{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+	text-align:"center";
+}
+h6{
+	text-align:center;
+}
+h4{
+	text-align:center;
+}
+.col-sm{
+	border: solid 1px black;
+}
+
+/*SECCIÓN 3*/
+.container{
+	display: flex;
+	align-items: center;
+	
+}
+
+/*SECCIÓN FORMULARIO*/
+h3{
+	text-align: center;
+	font-size: 50px;
+}
+fieldset {
+	margin: 1em auto;
+	border-color: #ffffff;
+	border-width: 10px;
+	border-radius: 10px;
+	width: 400px;
+}
+#botonEnviar{
+	background-color: green;
+}
+/*FOOTER*/
+footer{
+	margin:0;
+	padding:0;
+	background-color:#060652
+}
+footer ul {
+	font-size:14px;
+	color:white; 
+	list-style: none;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration-line:none;
+	font-weight: bold;
+}
+footer ul li{
+	float: left; /*crea el menu horizontal*/
+}
+footer ul li a{
+	padding: 10px 10px;
+	text-decoration:none;
+	text-align: left; 
+	font-size:14px;
+	color:white;
+	display:inline-block;
+	flex-direction: column;
+}
+
+
